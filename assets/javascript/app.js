@@ -150,10 +150,12 @@ var trivia = {
       // turn button green for correct
       $(this).addClass('btn-success').removeClass('btn-info');
       
+      
       trivia.correct++;
       clearInterval(trivia.timerId);
       resultId = setTimeout(trivia.guessResult, 1000);
       $('#results').html('<h3>Correct Answer!</h3>');
+  
     }
     // else the user picked the wrong option, increment incorrect
     else{
